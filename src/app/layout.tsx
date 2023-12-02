@@ -1,9 +1,9 @@
 import "./globals.css";
 
 import type {Metadata} from "next";
-import {Roboto} from "next/font/google";
+import {Rubik} from "next/font/google";
 
-const inter = Roboto({subsets: ["latin"], weight: "400"});
+const globalFont = Rubik({subsets: ["latin"], weight: "400"});
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={globalFont.className}>{children}</body>
     </html>
   );
 }
