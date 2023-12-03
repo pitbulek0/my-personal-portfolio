@@ -1,5 +1,13 @@
-import {MainNavigation} from "@/components/MainNavigation";
+import {MainNavigation, NavigationItem} from "@/components/MainNavigation";
 
 export default function Home() {
-  return <MainNavigation />;
+  return (
+    <MainNavigation>
+      <NavigationItem label='My Projects' link='#my-projects' />
+      <NavigationItem label='Skills' link='#skills' />
+      <NavigationItem label='Experience' link='#experience' />
+      <NavigationItem label='Support Me' link='#support-me' />
+      <NavigationItem label='Contact & Policy' link='#contact-and-privacy' />
+    </MainNavigation>
+  );
 }

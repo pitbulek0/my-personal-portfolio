@@ -1,1 +1,1 @@
-export {default as MainNavigation} from "./MainNavigation";
+export {MainNavigation, NavigationItem} from "./MainNavigation";
