@@ -12,7 +12,8 @@
     "format": "prettier . --write"
   },
   "lint-staged": {
-    "*": "npm run lint && npm run format"
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{js,jsx,ts,tsx,md,css,json}": "prettier --write"
   },
   "dependencies": {
     "next": "14.0.3",
